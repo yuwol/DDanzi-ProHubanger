@@ -45,6 +45,7 @@ def fileout(l, info, filename):
 	f.write("<p align='right'>Total Articles: " + info['total_articles'] + "</p>")
 	f.write("<p align='right'>Page Searched: " + info['page_searched'] + "</p>")
 	f.write("<p align='right'>Results From: " + info['result_from'] + " hours ago." + "</p>\n\n\n")
+	f.write("<p align='right'><a href='https://github.com/0xb0a1/DDanzi-ProHubanger'>파이썬 스크립트 공유 URL</a></p>\n\n\n")
 
 	f.write("</body></html>" + "\n")
 	f.close()
@@ -83,6 +84,7 @@ def htmlout(l, info):
 	html += "<p align='right'>Total Articles: " + info['total_articles'] + "</p>"
 	html += "<p align='right'>Page Searched: " + info['page_searched'] + "</p>"
 	html += "<p align='right'>Results From: " + info['result_from'] + " hours ago." + "</p>\n\n\n"
+	html += "<p align='right'><a href='https://github.com/0xb0a1/DDanzi-ProHubanger'>파이썬 스크립트 공유 URL</a></p>\n\n\n"
 
 	return html
 
