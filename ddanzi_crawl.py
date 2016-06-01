@@ -48,10 +48,11 @@ def crawl(s, sp_num, ep_num, p_hour):
 			ex = a.find("i", class_="fa fa-exclamation-triangle")			
 			if ex:
 				u = a.find("img")			
+				if u == None:
+					continue
 				f_no = a.find("td", class_="no")			
 				f_title = a.find("td", class_="title")
-				if u == None:
-					u = ""
+				
 				f_author = a.find("td", class_="author")	
 				f_time = a.find("td", class_="time")	
 				f_readnum = a.find("td", class_="readNum")	
